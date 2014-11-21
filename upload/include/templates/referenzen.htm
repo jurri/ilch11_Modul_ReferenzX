@@ -1,0 +1,208 @@
+
+{anfang}
+	<table width="565px" border="0" cellspacing="1" cellpadding="2" bgcolor="#f503fe" id="table25">  
+	<tr bgcolor="#6e6c6c"> 
+		<td class="titlereferenz" colspan="2" width="100%"><a href="index.php?referenzen-{id}" target="_self"><h2>&raquo; &nbsp;{title}</h2></a></td>
+	</tr><tr>
+		<td class="bgreferenz_img" width="150" height="150">
+			<ul class="thumb"><li><a href="{screen}" target="_blank" ><img src="{screen}" alt="" border="0"></a></li></ul>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.thumb img').hoverZoom({
+						speedView:600, 
+						speedRemove:400, 
+						showCaption:true, 
+						speedCaption:600, 
+						debug:true, 
+						hoverIntent:true, 
+						loadingIndicatorPos:'center'
+					});
+                });
+            </script>
+		</td>
+		<td bgcolor="#333333" width="100%" valign="top" height="170">
+			<table border="0" width="100%" cellspacing="1" cellpadding="2" id="table26">
+			<tr> 
+				<td width="100%" style="border-bottom: 1px dashed #DEDEDE;" size="1">Referenz wurde eingetragen von: <b>{username}</b></td>
+			</tr><tr> 
+				<td width="100%" style="border-bottom: 1px dashed #DEDEDE;" size="1">Design wurde erstellt von: <b>{designer}</b></td>
+			</tr><tr> 
+				<td width="100%" style="border-bottom: 1px dashed #DEDEDE;" size="1">Beschreibung: <b>{text}</b></td>
+			</tr><tr>
+				<td width="100%" style="border-bottom: 1px dashed #DEDEDE;" size="1">
+					<a href="index.php?referenzen-{id}" target="_self"><b>Mehr Details</b></a>
+				</td>
+			</tr><tr>
+				{forumlink}
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+</td>
+{bruch}  
+
+{EXPLODE}
+<br />
+<br />
+<center>{SITELINK}</center>
+Modded by FeTTsack &middot; www.graphics-for-all.de 
+  
+  
+{EXPLODE}
+<!-- News Kommentare und Mehr lesen -->
+<table width="100%" border="0" cellspacing="1" cellpadding="2" bgcolor="#f503fe" id="table16">
+<tr> 
+    <td width="150%" valign="top"> 
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table17">
+        <tr> 
+			<td width="100%" valign="top">
+				<table width="100%" cellpadding="2" cellspacing="1" bgcolor="#333333" id="table18">
+				<tr> 
+					<td colspan="2" class="titlereferenz">&nbsp;<b>&raquo; </b>{NAME}</td>
+				</tr><tr> 
+					<td colspan="2"></td>
+				</tr><tr> 
+					<td width="35%" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Designer:</b></td>
+					<td width="65%" style="border-bottom: 1px dashed #DEDEDE;" size="1">{DESIGNER}</td>
+				</tr><tr> 
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Slicer:</b></td>
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{SILCER}</td>
+				</tr><tr> 
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Anpasser:</b></td>
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{ANPASSER}</td>
+				</tr><tr> 
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Code:</b></td>
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{CODE}</td>
+				</tr><tr> 
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Preis:</b></td>
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{PREIS}</td>
+				</tr><tr> 
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Homepage Link:</b></td>
+					<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><a href="http://{HP}" target="_blank">{HP}</a></td>
+				</tr>
+				</table>
+			</td>
+			<td width="7">&nbsp;&nbsp;</td>
+			<td width="200" valign="top">
+				<table width="100%" cellpadding="2" cellspacing="1" bgcolor="#f503fe" id="table19">
+				<tr> 
+					<td class="title" >&nbsp; <b>&raquo; </b> Screenshot:</td>
+				</tr><tr> 
+					<td></td>
+				</tr><tr> 
+					<td align="center" class="bgreferenz_img" width="200"><a href="{SCREEN}" target="_blank"><img src="{SCREEN}" alt="" border="0" width="145" height="145"></a></td>
+				</tr>
+				</table>
+			</td>
+        </tr>
+		</table>
+	</td>
+</tr><tr> 
+    <td width="100%" valign="top">&nbsp;&nbsp; </td>
+</tr><tr> 
+    <td width="100%" valign="top"> 
+		<table width="100%" cellspacing="1" cellpadding="2" bgcolor="#333333" id="table20">
+        <tr> 
+			<td class="titlereferenz"> &nbsp;<b>&raquo; </b> Anmerkungen</td>
+        </tr><tr> 
+			<td></td>
+        </tr><tr> 
+			<td>{ANMERKUNG}</td>
+        </tr>
+		</table>
+	</td>
+</tr><tr> 
+    <td width="100%" valign="top"> &nbsp;&nbsp; </td>
+</tr><tr> 
+    <td width="100%" valign="top"> 
+		<table width="100%" cellspacing="1" cellpadding="2" bgcolor="#333333" id="table21">
+        <tr> 
+			<td colspan="2" class="titlereferenz">&nbsp; <b>&raquo; </b> Sonstige Informationen</td>
+        </tr><tr> 
+			<td colspan="2"></td>
+        </tr><tr> 
+			<td width="35%" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Verwendete Programme:</b></td>
+			<td width="65%" style="border-bottom: 1px dashed #DEDEDE;" size="1">{VPROGRAMME}</td>
+        </tr><tr> 
+			<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Zeit:</b></td>
+			<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{ZEIT}</td>
+        </tr><tr> 
+			<td style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Release:</b></td>
+			<td style="border-bottom: 1px dashed #DEDEDE;" size="1">{RELEASE}</td>
+        </tr>
+        </table>
+	</td>
+</tr><tr> 
+    <td width="100%" valign="top"> &nbsp;&nbsp; </td>
+</tr><tr> 
+    <td width="100%" valign="top"> 
+		<table width="100%" cellspacing="1" cellpadding="2" bgcolor="#333333" id="table22">
+        <tr> 
+			<td colspan="2" class="titlereferenz" width="1221">&nbsp;<b>&raquo; </b> Auftraggeber Details</td>
+        </tr><tr> 
+			<td colspan="2" width="1221"></td>
+        </tr><tr> 
+			<td width="198" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Name, Vorname:</b></td>
+			<td width="1015" align="center" style="border-bottom: 1px dashed #DEDEDE;" size="1"><p align="left">{NAME}</p></td>
+        </tr><tr> 
+			<td width="198" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Nickname:</b></td>
+			<td align="center" width="1015" style="border-bottom: 1px dashed #DEDEDE;" size="1"><p align="left">{NNAME}</td>
+        </tr><tr> 
+			<td width="198" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Email Adresse:</b></td>
+			<td align="center" width="1015" style="border-bottom: 1px dashed #DEDEDE;" size="1"><p align="left"><a href="mailto:{EMAIL}">{EMAIL}</a></p></td>
+        </tr><tr> 
+			<td width="198" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>ICQ Nummer:</b></td>
+			<td align="center" width="1015" style="border-bottom: 1px dashed #DEDEDE;" size="1"><p align="left">{ICQ}</p></td>
+        </tr><tr> 
+			<td width="198" style="border-bottom: 1px dashed #DEDEDE;" size="1"><b>Homepage:</b></td>
+			<td align="center" width="1015" style="border-bottom: 1px dashed #DEDEDE;" size="1"><p align="left"><a href="http://{HP}" target="_blank">{HP}</a></p></td>
+        </tr>
+		</table>
+	</td>
+</tr><tr> 
+    <td width="100%" valign="top"></td>
+</tr>
+</table>
+
+
+<p>&nbsp;</p>
+<table class="border" width="100%" cellpadding="5" cellspacing="1" border="0" id="table23"> 	
+<tr> 
+	<td height="25" class="titlereferenz" style="border-bottom: 1px dashed #DEDEDE;">{_lang_commentsfor} {NAME}</td>
+</tr><tr>
+	<td bgcolor="#f503fe" style="border-bottom: 1px dashed #DEDEDE;">
+		{EXPLODE}
+		<form action="index.php?referenzen-{NID}" method="POST">
+			<fieldset>
+				<legend>{_lang_writecomment}</legend>
+				<input type="text" name="name" value="{uname}" /> &nbsp; {ANTISPAM} &nbsp; <input type="submit" value="{_lang_enter}"><br />
+				<textarea style="width: 98%" cols="50" rows="2" name="txt"></textarea><br />
+			</fieldset>
+		</form><br />
+		{EXPLODE}
+		<span class="Cmite"># <b>{ZAHL}</b> von {NAME}</span>
+		<br />{TEXT}<br /><br />
+		{EXPLODE}<br />
+		<a href="index.php?referenzen"><b>&laquo;</b> {_lang_back}</a>
+	</td>
+</tr>
+</table>
+
+
+{EXPLODE}
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="rand" id="table24">
+<tr class="mite"> 
+    <td width="65%"><b>{NAME}</b></td>
+    <td width="15%">{FUER}</td>
+    <td width="20%" align="right">{DATE}</td>
+</tr><tr class="norm"> 
+    <td valign="top" colspan="2">{TEXT}{MEHR}</td>
+    <td valign="top" rowspan="2" align="center">{KATE}</td>
+</tr><tr class="norm"> 
+    <td valign="bottom" height="20" colspan="2" align="center"> 
+      <b>{_lang_from} {UNAME}</b> &nbsp; &nbsp; &nbsp; [ {KOM} <a href="index.php?referenzen-1&amp;nid={ID}">{_lang_comments}</a> ] 
+    </td>
+</tr>
+</table>
