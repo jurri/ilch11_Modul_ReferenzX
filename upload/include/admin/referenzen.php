@@ -68,28 +68,28 @@ if ( !empty($_REQUEST['um']) ) {
 		if ( $_POST['katLis'] == 'neu' ) {
 		  $_POST['katLis'] = $_POST['kat'];
 		}
-		db_query('UPDATE `prefix_referenzen` SET
-				referenzen_title = "'.$_POST['titel'].'",
-				user_id  = '.$_SESSION['authid'].',
-				referenzen_recht = '.$_POST['grecht'].',
-				referenzen_kat   = "'.$_POST['katLis'].'",
-				referenzen_designer  = "'.$_POST['designer'].'",
-        referenzen_slicer  = "'.$_POST['slicer'].'",
-        referenzen_anpasser  = "'.$_POST['anpasser'].'",
-        referenzen_code  = "'.$_POST['code'].'",
-        referenzen_preis  = "'.$_POST['preis'].'",
-        referenzen_anmerkung  = "'.$_POST['anmerkung'].'",
-        referenzen_vprogramme  = "'.$_POST['vprogramme'].'",
-        referenzen_zeit  = "'.$_POST['zeit'].'",
-        referenzen_release  = "'.$_POST['release'].'",
-        referenzen_name  = "'.$_POST['name'].'",
-        referenzen_nname  = "'.$_POST['nname'].'",
-        referenzen_email  = "'.$_POST['email'].'",
-       	referenzen_icq  = "'.$_POST['icq'].'",
-        referenzen_hp  = "'.$_POST['hp'].'",
-        referenzen_screen  = "'.$_POST['screen'].'",
-		referenzen_forum  = "'.$_POST['forumlink'].'",
-				referenzen_text  = "'.$text.'" WHERE referenzen_id = "'.$_POST['referenzenID'].'" LIMIT 1');
+		db_query("UPDATE `prefix_referenzen` SET
+				referenzen_title = '".$_POST['titel']."',
+				user_id  = ".$_SESSION['authid'].",
+				referenzen_recht = 0,
+				referenzen_kat   = '".$_POST['katLis']."',
+				referenzen_designer  = '".$_POST['designer']."',
+        referenzen_slicer  = '".$_POST['slicer']."',
+        referenzen_anpasser  = '".$_POST['anpasser']."',
+        referenzen_code  = '".$_POST['code']."',
+        referenzen_preis  = '".$_POST['preis']."',
+        referenzen_anmerkung  = '".$_POST['anmerkung']."',
+        referenzen_vprogramme  = '".$_POST['vprogramme']."',
+        referenzen_zeit  = '".$_POST['zeit']."',
+        referenzen_release  = '".$_POST['release']."',
+        referenzen_name  = '".$_POST['name']."',
+        referenzen_nname  = '".$_POST['nname']."',
+        referenzen_email  = '".$_POST['email']."',
+       	referenzen_icq  = '".$_POST['icq']."',
+        referenzen_hp  = '".$_POST['hp']."',
+        referenzen_screen  = '".$_POST['screen']."',
+		referenzen_forum  = '".$_POST['forumlink']."',
+				referenzen_text  = '".$text."' WHERE referenzen_id = '".$_POST['referenzenID']."' LIMIT 1");
 					  echo mysql_error();
 	  $edit = $_POST['referenzenID'];
   }
